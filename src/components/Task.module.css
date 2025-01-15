@@ -1,0 +1,43 @@
+.task {
+    display: flex;
+    
+    margin:auto;
+    margin-top: -26px;
+
+    width: 638px;
+    height: 54px;
+   
+}
+
+.task textarea {
+    width: 638px;
+    height: 54px;
+    margin-right: 8px;
+    padding: 1rem;
+    background: var(--gray-200);
+    background-color: var(--gray-400);
+    color: var(--gray-300);
+    justify-content: right;
+    align-items:center;
+    border: 0;
+    font-weight: bold;
+    border-radius: 4px;
+    resize: none; 
+}
+
+
+.task > button {
+    width: 90px;
+    height: 55px;
+    border-radius: 4px;
+    border: 0;
+    color: rgb(255, 255, 255);
+    background-color: #1e6f9f;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.1s;
+}          
+
+.task button:hover {
+    background-color: #5e60ce;
+}

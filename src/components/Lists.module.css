@@ -1,0 +1,86 @@
+.listBox {
+    width: 658px;
+    height: auto;
+    padding: 1%;
+    margin: auto;
+    margin-top: -124px;
+}    
+
+.taskItem {
+    gap: 1rem;
+    
+    background: (var(--gray-200));
+    background-color: var(--gray-400);
+    padding: 1rem;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    align-items: center;
+    border-color: var(--gray-100);
+    border-radius: 5px;
+    
+}
+
+.taskItem:first-child {
+    margin-top: 56px; 
+  }
+  
+  .taskItem:not(:first-child) {
+    margin-top: 12px; 
+  }
+
+.selector {
+    font-size: 16px;
+    font-weight: bold;
+    color: (var(--gray-100));
+    flex-grow: 1;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: var(--gray-300) 
+}
+
+
+
+.listBox listContent {
+    background: var(--gray-100);
+    border-radius: 2px;
+    padding: 1rem;
+}
+
+.listBox header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.listBox header button {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    cursor: pointer;   
+}
+
+.taskText {
+    color: #808080;
+}
+
+.completedButton {
+    color: #4ea8de;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.taskStatusCompleted {
+    padding: 5px;
+    background-color: #5E60CE;
+    border-radius: 35px;
+    
+}
+
+.taskStatusIncompleted {
+    padding: 5px;
+    background-color: #F2F2F2;
+    border-radius: 35px;
+}
