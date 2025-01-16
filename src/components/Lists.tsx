@@ -33,29 +33,29 @@ export function Lists({ tasks, setTasks }: ListsProps) {
         {tasks.map((task, index) => (
           <div key={index} className={styles.taskItem}>
             <header>
-              <button
-                title="Concluir tarefa"
-                onClick={() => handleCompleteTask(task)}
-                className={styles.completedButton}
-              >
-                <div className={task.completed ? styles.taskStatusCompleted : styles.taskStatusIncompleted}>
+  <button
+    title="Concluir tarefa"
+    onClick={() => handleCompleteTask(task)}
+    className={styles.completedButton}
+  >
+    <div className={task.completed ? styles.taskStatusCompleted : styles.taskStatusIncompleted}>
+      {task.completed && <span className={styles.checkIcon}>✔</span>}
+    </div>
+  </button>
 
-                </div>
-              </button>
-
-              <div 
-                className={`${styles.selector} ${task.completed ? styles.completed : ''}`}>
-                  {task.text}
-              </div>
-              
-              <button
-                title="Deletar tarefa"
-                onClick={() => handleDeleteTask(task)}
-                className={styles.deleteButton}
-              >
-                <img src={botao} alt="Deletar" className={styles.icon} />
-              </button>
-            </header>
+  <div 
+    className={`${styles.selector} ${task.completed ? styles.completed : ''}`}>
+    {task.text}
+  </div>
+  
+  <button
+    title="Deletar tarefa"
+    onClick={() => handleDeleteTask(task)}
+    className={styles.deleteButton}
+  >
+    <img src={botao} alt="Deletar" className={styles.icon} />
+  </button>
+</header>
           </div>
         ))}
       </div>

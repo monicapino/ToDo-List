@@ -67,20 +67,37 @@
 }
 
 .completedButton {
-    color: #4ea8de;
+    
     margin-right: 20px;
     cursor: pointer;
+   
 }
 
 .taskStatusCompleted {
+    width: 24px;
+    height: 24px;
     padding: 5px;
     background-color: #5E60CE;
     border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
 .taskStatusIncompleted {
+    width: 24px;
+    height: 24px;
     padding: 5px;
-    background-color: #F2F2F2;
+    background-color: transparent;
     border-radius: 35px;
+    border: 2px solid #4EA8DE;
+
 }
+
+.checkIcon {
+    color: #fff;   /* Cor do ícone de visto */
+    font-size: 13px; /* Ajuste o tamanho do ícone conforme necessário */
+  }
+
+  
