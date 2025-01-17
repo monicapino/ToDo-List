@@ -1,12 +1,9 @@
 .task {
     display: flex;
-    
     margin:auto;
     margin-top: -26px;
-
     width: 638px;
     height: 54px;
-   
 }
 
 .task textarea {
@@ -36,6 +33,9 @@
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.1s;
+    font-family: 'Inter ', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
 }          
 
 .task button:hover {

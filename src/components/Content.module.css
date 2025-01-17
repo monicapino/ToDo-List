@@ -4,12 +4,16 @@
     align-items: center;     
     justify-content: center;
     height: 100%;           
-    text-align: center;      
+    text-align: center; 
+    font-family: 'Inter ', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .content, p {
     margin: 0;
-    color: var(--gray-300)
+    color: var(--gray-300);
+    
 }
 
 .img {

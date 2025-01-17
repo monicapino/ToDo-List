@@ -13,11 +13,17 @@ export function Tasks({ created, completed }: TasksProps) {
         <span className={styles.createdNumber}>{created}</span>
       </strong>
       
-      <div className={styles.done}>
+      <strong className={styles.done}>
         Concluídas:
-        <span className={styles.completedNumber}>{completed}</span>  
-        
-      </div>
+        {}
+        {created > 0 ? ( 
+          <span className={styles.completedNumber}>
+            {completed} de {created}
+          </span>  
+        ) : ( 
+          <span className={styles.completedNumber}>0</span> 
+        )}
+      </strong>
       
       <div className={styles.line}></div>
     </div>
